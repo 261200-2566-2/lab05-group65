@@ -244,13 +244,13 @@ class RPGCharacterImpl implements RPGCharacter {
     }
 
     private int calculateDamage() {
-        
+        // Implement your own logic to calculate damage
         return this.getAttack();
     }
 
     @Override
     public void takeDamage(int damage) {
-        
+        // Implement damage logic
         this.currentHp -= damage;
         if (this.currentHp < 0) {
             this.currentHp = 0;
@@ -259,7 +259,7 @@ class RPGCharacterImpl implements RPGCharacter {
 
     @Override
     public void useAbility(String ability) {
-       
+        // Implement ability logic
     }
 
     @Override
@@ -271,7 +271,7 @@ class RPGCharacterImpl implements RPGCharacter {
     @Override
     public void unequipAccessory(Accessory accessory) {
         equippedAccessories.remove(accessory);
-       
+        // Implement logic to remove effects of the accessory
     }
 
     @Override
@@ -295,13 +295,13 @@ public void addHP(int hp) {
 
     @Override
     public void addAttackSpeed(int attackSpeed) {
-        
+        // Implement logic to add attack speed
         this.attackSpeed += attackSpeed;
     }
 
     @Override
     public void addArmor(int armor) {
-        
+        // Implement logic to add armor
     }
 
     @Override
