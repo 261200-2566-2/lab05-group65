@@ -233,7 +233,7 @@ class RPGCharacterImpl implements RPGCharacter {
 
     @Override
     public void attack(RPGCharacter target) {
-        // Implement attack logic
+        
         if (this.getAttack() > 0) {
             int damageDealt = this.calculateDamage();
             target.takeDamage(damageDealt);
@@ -331,12 +331,12 @@ class WarriorImpl extends RPGCharacterImpl implements Warrior {
 
     @Override
     public void useSlashAttack() {
-        // Implement warrior-specific slash attack logic
+        
     }
 
     @Override
     public void useDefend() {
-        // Implement warrior-specific defend logic
+        
     }
 }
 
@@ -347,12 +347,12 @@ class MageImpl extends RPGCharacterImpl implements Mage {
 
     @Override
     public void castSpell(String spell) {
-        // Implement mage-specific spell casting logic
+        
     }
 
     @Override
     public void meditate() {
-        // Implement mage-specific meditate logic
+        
     }
 }
 
